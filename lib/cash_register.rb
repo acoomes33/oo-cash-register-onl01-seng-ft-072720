@@ -19,7 +19,7 @@ class CashRegister
     quantity.times {@items.push(title)}
   end
   
-  def apply_discount
+  def apply_discount()
     if @discount > 0
       @discount = (@discount/100).to_f
       discounted_total = @total -  (@total * @discount)
